@@ -1,0 +1,23 @@
+@import "../../styles/main";
+button {
+  background-color: $main-color;
+  font-size: 18px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  transition: 0.5s;
+  cursor: pointer;
+
+  a {
+    color: $text-color;
+  }
+
+  &:hover {
+    background-color: $text-color;
+
+    a {
+      color: $main-color;
+    }
+  }
+}

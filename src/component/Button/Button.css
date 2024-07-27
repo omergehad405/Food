@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-moz-selection {
+  background-color: #ff702a;
+  color: #fff;
+}
+
+::selection {
+  background-color: #ff702a;
+  color: #fff;
+}
+
+body {
+  color: #fff;
+  background-color: #1e1c2e;
+}
+
+.container {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.title {
+  color: #ff702a;
+  text-align: center;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #ff702a;
+  font-size: 18px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  transition: 0.5s;
+  cursor: pointer;
+}
+button a {
+  color: #fff;
+}
+button:hover {
+  background-color: #fff;
+}
+button:hover a {
+  color: #ff702a;
+}/*# sourceMappingURL=Button.css.map */

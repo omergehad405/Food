@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-moz-selection {
+  background-color: #ff702a;
+  color: #fff;
+}
+
+::selection {
+  background-color: #ff702a;
+  color: #fff;
+}
+
+body {
+  color: #fff;
+  background-color: #1e1c2e;
+}
+
+.container {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.title {
+  color: #ff702a;
+  text-align: center;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.menu .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.menu .container .menuCard {
+  background-color: #feeee7;
+  text-align: center;
+  padding: 20px;
+  color: black;
+  text-transform: capitalize;
+  margin: 5px;
+  border-radius: 10px;
+  position: relative;
+  width: 300px;
+  height: auto;
+}
+.menu .container .menuCard .shopCart {
+  background-color: #ff702a;
+  color: white;
+  padding: 7px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  font-size: 18px;
+}
+.menu .container .menuCard img {
+  width: 150px;
+}
+.menu .container .menuCard h1 {
+  padding: 1rem 0 0 0;
+}
+.menu .container .menuCard P {
+  padding: 1rem 0;
+}
+.menu .container .menuCard span {
+  color: #ff702a;
+  font-weight: bold;
+}/*# sourceMappingURL=Menu.css.map */

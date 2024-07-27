@@ -1,0 +1,65 @@
+@import "../../styles/main";
+
+.about {
+  margin: 7rem 0;
+  .container {
+    @include flexBox(row);
+    flex-wrap: wrap;
+
+    img {
+      width: 450px;
+    }
+
+    .info {
+      width: 50%;
+
+      span {
+        color: $main-color;
+        font-weight: bold;
+      }
+
+      h1 {
+        padding: 0.5rem 0 1rem 0;
+      }
+
+      p {
+        font-size: 15px;
+        padding-bottom: 1rem;
+        line-height: 1.5;
+        color: #999;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    .container {
+      @include flexCenter();
+      gap: 2rem;
+      text-align: center;
+
+      img {
+        width: 300px;
+      }
+
+      .info {
+        width: 100%;
+
+        span {
+          color: $main-color;
+          font-weight: bold;
+        }
+
+        h1 {
+          padding: 0.5rem 0 1rem 0;
+        }
+
+        p {
+          font-size: 17px;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

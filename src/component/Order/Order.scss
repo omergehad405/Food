@@ -1,0 +1,19 @@
+@import "../../styles/main";
+.order {
+  margin: 5rem 0;
+  .container {
+    @include flexCenter();
+    background-color: $second-color;
+    height: 270px;
+    border-radius: 15px;
+    flex-direction: column;
+
+    h1 {
+      color: black;
+      text-align: center;
+      text-transform: capitalize;
+      line-height: 1.5;
+      padding-bottom: 2rem;
+    }
+  }
+}

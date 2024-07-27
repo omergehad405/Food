@@ -1,0 +1,50 @@
+@import "../../styles/main";
+
+.menu {
+  .container {
+    @include flexCenter();
+    padding: 2rem 0;
+
+    .menuCard {
+      background-color: $second-color;
+      text-align: center;
+      padding: 20px;
+      color: black;
+      text-transform: capitalize;
+      margin: 5px;
+      border-radius: 10px;
+      position: relative;
+      width: 300px;
+      height: auto;
+
+      .shopCart {
+        background-color: $main-color;
+        color: white;
+        padding: 7px;
+        border-top-right-radius: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      img {
+        width: 150px;
+      }
+
+      h1 {
+        padding: 1rem 0 0 0;
+      }
+
+      P {
+        padding: 1rem 0;
+      }
+
+      span {
+        color: $main-color;
+        font-weight: bold;
+      }
+    }
+  }
+}

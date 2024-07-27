@@ -1,0 +1,61 @@
+@import "../../styles/main";
+
+header {
+  background-color: var(--bg-color);
+  .container {
+    @include flexBox(row);
+    .logo {
+      font-size: 3rem;
+      color: $main-color;
+      text-transform: capitalize;
+      @include flexCenter();
+      height: 100px;
+    }
+
+    ul {
+      @include flexCenter();
+      gap: 3rem;
+
+      li {
+        a {
+          font-size: 21px;
+          text-transform: capitalize;
+          color: $text-color;
+          transition: 0.3s;
+        }
+        &:hover a {
+          color: $main-color;
+        }
+      }
+    }
+
+    .bars {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+    .container {
+      ul {
+        @include flexBox(column);
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0);
+        left: -50rem;
+        padding: 25px;
+        z-index: 999;
+        gap: 2rem;
+        transition: 0.5s;
+      }
+
+      .bars {
+        display: block;
+        font-size: 25px;
+      }
+    }
+  }
+}
